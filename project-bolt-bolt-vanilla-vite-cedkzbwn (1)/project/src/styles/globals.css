@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .gradient-bg {
+    @apply bg-gradient-to-r from-blue-400 via-purple-500 to-orange-500;
+  }
+  
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl;
+  }
+  
+  .primary-button {
+    @apply bg-gradient-to-r from-blue-400 to-orange-400 
+           px-6 py-2 rounded-full font-bold text-white 
+           hover:opacity-90 transition-all hover:scale-105;
+  }
+}
